@@ -8,7 +8,7 @@ export default function RadioComponent({ questionId, question, options }) {
           <div>
             { options.map(option => (
               <div>
-                <input name={questionId} type="radio"/>
+                <input name={questionId} type="radio"/> 
                 <label>{option}</label>
               </div> 
             ))}

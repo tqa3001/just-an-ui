@@ -9,7 +9,7 @@ export default function Body() {
   let statType = 0; 
   return (
     <div className="px-6">
-      <header className="text-center my-4">
+      <header className="text-center my-10">
         <h1 className="font-bold text-6xl text-blue-600">A customizable tool</h1> 
         <h2 className="font-bold text-2xl">for creating expriments with cellular automaton (CA).</h2>
         <div className="flex justify-center">
@@ -20,23 +20,24 @@ export default function Body() {
       </header>
       <div>
         <div className={"mt-4 " + styles.tictactoe}>
-          <div className="flex">
-            <div className="basis-1/2 grow">
-              <span className="text-2xl m-2 font-bold">My CA's | </span>
-              <a href="#" className="text-xl font-bold text-blue-700">View all</a>
+          <h2 className="font-bold text-3xl m-2">Dashboard</h2>
+          <div className="flex justify-between ">
+            <div className="basis-2/5">
+              <span className="text-2xl m-2 font-bold">My CAs</span>
               {[...Array(3).keys()].map((id) => 
-                <CAEntry automaton={{id: id, name: "Waffle House", shortDescription: "Hey it's Quandale Dingle here"}}/>
+                <CAEntry automaton={{id: id, name: "Waffle House", shortDescription: "Hey it's Quandale Dingle!"}}/>
               )}
+              <a href="#" className="w-full text-xl font-bold text-blue-700 m-2">View all</a>
             </div>
-            <div className="basis-1/2 ml-8">
-              <div className="flex justify-center">
+            <div className="basis-3/5">
+              <div className="flex justify-center">   
                 <div className="flex flex-col mr-8">
                   <div className="text-cente">
-                    <span className="text-2xl m-2 font-bold">Stats | </span>
-                    <a href="#" className="text-xl font-bold text-blue-700">View all</a>
+                    <span className="text-2xl m-2 font-bold">Stats</span>
                   </div>
-                  <button className={btn}>Stat 1</button> 
-                  <button className={btn}>Stat 2</button>
+                  <button className={btn + " min-w-min"}>Stat 1</button> 
+                  <button className={btn + " min-w-min"}>Stat 2</button>
+                  <a href="#" className="text-xl font-bold text-blue-700">View all</a>
                 </div>
                 <BarGraph statType={0}/>
               </div>

@@ -41,5 +41,6 @@ Output:
 - Button to start evolution + stuff as usual. 
 
 ## A few ideas
-Interactive multiplayer multi-colored cellula automaton game? 
+1. Interactive multiplayer multi-colored cellula automaton game? 
 The model is so versatile you can build so many things with it
+2. make the word "customizable" -> different designs

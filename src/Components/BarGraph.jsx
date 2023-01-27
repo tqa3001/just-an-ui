@@ -1,3 +1,7 @@
+/**
+ * Alternative method using grid: https://css-tricks.com/creating-a-bar-graph-with-css-grid/
+ */
+
 export default function BarGraph({ statType }) {
   const unit = 20; 
   return (

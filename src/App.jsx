@@ -11,6 +11,9 @@ export default function App() {
     <main className="font-mono"> 
       <NavBar />
       <Body />
+      <footer className="bg-black text-white text-center p-4">
+        Made with 💀💀💀 using ⚛️ + <span className="text-green-400">Vite</span> + <span className="text-blue-400">TailwindCSS</span>
+      </footer>
     </main> 
   )
 }

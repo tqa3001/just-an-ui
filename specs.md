@@ -39,3 +39,7 @@ Input: A set of ids for cellula automatons
 Output: 
 - Embed two experiment next to each other 
 - Button to start evolution + stuff as usual. 
+
+## A few ideas
+Interactive multiplayer multi-colored cellula automaton game? 
+The model is so versatile you can build so many things with it

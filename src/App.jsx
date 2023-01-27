@@ -8,7 +8,7 @@ export default function App() {
     * bug: import NavBar.jsx => import Navbar.jsx (hmr won't work)
     * */}
   return (
-    <main> 
+    <main className="font-mono"> 
       <NavBar />
       <Body />
     </main> 
